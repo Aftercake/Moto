@@ -1,0 +1,303 @@
+/*Style général*/
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(../img/bg_body.svg);
+  background-color: #444444;
+}
+
+h1, h2, h3, h4{
+  font-family: 'PT Sans Narrow', sans-serif;
+  margin: 0;
+}
+
+p, a{
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+/*FIN style général*/
+
+.container-rwd{
+  /* background-color: gray; */
+  margin: 0 auto;
+  padding: 15px;
+}
+
+header{
+  background: linear-gradient(158deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%);
+  padding: 25px;
+}
+
+header img{
+  display: block;
+  margin: 0 auto 30px auto;
+  width: 95%;
+}
+
+header nav{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+header nav a{
+  height: 65px;
+  line-height: 90px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+main{
+  margin-bottom: 30px;
+  background-image: url(../img/bg_body.svg);
+  background-color: #444444;
+}
+
+h1{
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.slider{
+  width: 100%;
+  border: 2px solid white;
+}
+
+h2{
+  line-height: 60px;
+  padding-left: 20px;
+  font-size: 25px;
+  color: white;
+}
+
+.gang{
+  color: #ff9d00;
+}
+
+h3{
+  color: #ff9d00;
+  border-bottom: 1px solid #ff9d00;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.card-moto{
+  background-color: white;
+  padding: 10px;
+  width: 95%;
+  margin: 0 auto 30px auto;
+}
+
+.card-moto a{
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  color: white;
+  background-color: #ff9d00;
+}
+
+.card-moto p{
+  line-height: 30px;
+}
+
+.moto{
+  width: 100%;
+}
+
+.detail p{
+  text-align: center;
+  color: white;
+  line-height: 30px;
+}
+
+.reseaux-sociaux{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  font-size: 50px;
+}
+
+.reseaux-sociaux i{
+  margin: 20px auto;
+}
+
+video{
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+}
+
+h4{
+  color: white;
+  text-align: center;
+}
+
+footer{
+  box-shadow: 5px 5px 20px -5px;
+  padding: 15px;
+}
+
+footer p{
+  line-height: 30px;
+  color: white;
+  text-align: center;
+}
+
+footer nav{
+  display: flex;
+  justify-content: space-around;
+}
+
+footer nav a{
+  width: 100px;
+  height: 50px;
+  color: white;
+}
+
+.home{
+  text-align: end;
+}
+
+footer nav a:nth-child(2){
+  text-align: center;
+}
+
+.client{
+  padding-left: 30px;
+}
+
+
+@media screen and (min-width: 300px){
+  .container-rwd{
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 700px){
+  .container-rwd{
+    width: 700px;
+  }
+
+  br{
+    display: none;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header img{
+    width: 30%;
+    margin: 0;
+  }
+
+  .container-moto{
+    padding: 30px;
+  }
+
+  h2{
+    padding-left: 50px;
+  }
+
+  .detail{
+    padding: 40px;
+  }
+
+  footer p{
+    margin-bottom: 30px;
+  }
+
+  .container-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  footer nav{
+    justify-content: space-between;
+  }
+
+  .home{
+    text-align: center;
+  }
+  
+  footer nav a:nth-child(2){
+    text-align: center;
+  }
+  
+  .client{
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .container-rwd{
+    width: 1200px;
+  }
+
+  main{
+    margin-bottom: 0;
+  }
+
+  h2{
+    padding-left: 60px;
+    margin-top: 50px;
+  }
+
+  .container-footer{
+    width: 40%;
+  } 
+
+  .container{
+    display: flex;
+  }
+
+  .detail{
+    width: 50%;
+    padding: 0 0 0 50px;
+  }
+
+  .detail p{
+    text-align: left;
+    margin: 0;
+  }
+
+  .reseaux-sociaux{
+    flex-direction: row;
+    margin-top: 50px;
+  }
+
+  video{
+    width: 50%;
+  }
+
+  .slider{
+    border: 5px solid white;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .container-moto{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 60px;
+  }
+
+  .card-moto{
+    width: 23%;
+    margin: 0;
+  }
+}
